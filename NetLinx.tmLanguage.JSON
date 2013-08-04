@@ -78,7 +78,7 @@
         },
         {
             "comment": "Data Event Keywords",
-            "match": "(?i)\\b(awake|command|hold|onerror|offline|online|repeat|standby)\\b",
+            "match": "(?i)\\b(awake|command|hold|onerror|offline|online|standby)\\b",
             "name": "keyword.control.event.data.netlinx"
         },
         {
@@ -158,7 +158,7 @@
         },
         {
             "comment": "Push And Release Keywords",
-            "match": "(?i)\\b(do_push|do_push_timed|do_release|min_to|push|push_channel|push_devchan|push_device|release|release_channel|release_devchan|release_device|to)\\b",
+            "match": "(?i)\\b(repeat|do_push|do_push_timed|do_release|min_to|push|push_channel|push_devchan|push_device|release|release_channel|release_devchan|release_device|to)\\b",
             "name": "support.function.usp"
         },
         {
