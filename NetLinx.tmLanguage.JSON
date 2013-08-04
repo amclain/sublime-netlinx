@@ -113,7 +113,7 @@
         },
         {
             "comment": "Get Keywords",
-            "match": "(?i)\\b(get_buffer_char|get_buffer_string|get_last|get_multi_buffer_string|get_pulse_time|get_serial_number|get_system_number|get_timer|get_unique_id|get_url_list)\\b",
+            "match": "(?i)\\b(get_last|get_multi_buffer_string|get_pulse_time|get_serial_number|get_system_number|get_timer|get_unique_id|get_url_list)\\b",
             "name": "keyword.control.netlinx"
         },
         {
@@ -158,8 +158,7 @@
         },
         {
             "comment": "Set Keywords",
-            "comment": "TODO: Add this.",
-            "match": "(?i)\\b()\\b",
+            "match": "(?i)\\b(set_outdoor_temperature|set_pulse_time|pulse|set_system_number|set_timer|set_virtual_channel_count|set_virtual_port_count)\\b",
             "name": "keyword.control.netlinx"
         },
         {
