@@ -26,6 +26,11 @@
             "name": "constant.numeric.netlinx"
         },
         {
+            "comment": "hex",
+            "match": "(\\$[0-9a-fA-F]+)",
+            "name": "constant.numeric.netlinx"
+        },
+        {
             "comment": "single quoted string",
             "begin": "'",
             "beginCaptures": {
