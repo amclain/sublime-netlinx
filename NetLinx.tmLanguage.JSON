@@ -288,7 +288,7 @@
             "include": "#block"
         },
         {
-            "begin": "(?x)\n    \t\t(?:  ^                                 # begin-of-line\n    \t\t  |\n    \t\t     (?: (?= \\s )           (?<!else|new|return) (?<=\\w)      #  or word + space before name\n    \t\t       | (?= \\s*[A-Za-z_] ) (?<!&&)       (?<=[*&>])   #  or type modifier before name\n    \t\t     )\n    \t\t)\n    \t\t(\\s*) (?!(while|for|do|if|else|switch|catch|enumerate|return|r?iterate)\\s*\\()\n    \t\t(\n    \t\t\t(?: [A-Za-z_][A-Za-z0-9_]*+ | :: )++ |                  # actual name\n    \t\t\t(?: (?<=operator) (?: [-*&<>=+!]+ | \\(\\) | \\[\\] ) )  # if it is a C++ operator\n    \t\t)\n    \t\t \\s*(?=\\()",
+            "begin": "(?x)\n    \t\t(?:  ^                                 # begin-of-line\n    \t\t  |\n    \t\t     (?: (?= \\s )           (?<!else|return) (?<=\\w)      #  or word + space before name\n    \t\t       | (?= \\s*[A-Za-z_] ) (?<!&&)       (?<=[*&>])   #  or type modifier before name\n    \t\t     )\n    \t\t)\n    \t\t(\\s*) (?!(while|for|do|if|else|switch|select|return)\\s*\\()\n    \t\t(\n    \t\t\t(?: [A-Za-z_][A-Za-z0-9_]*+ | :: )++ |                  # actual name\n    \t\t\t(?: (?<=operator) (?: [-*&<>=+!]+ | \\(\\) | \\[\\] ) )  # if it is a NetLinx operator\n    \t\t)\n    \t\t \\s*(?=\\()",
             "beginCaptures": {
                 "1": {
                     "name": "punctuation.whitespace.function.leading.netlinx"
@@ -374,7 +374,7 @@
                             "name": "punctuation.definition.parameters.netlinx"
                         }
                     },
-                    "match": "(?x) (?: (?= \\s )  (?:(?<=else|new|return) | (?<!\\w)) (\\s+))?\n\t\t\t(\\b\n\t\t\t\t(?!(while|for|do|if|else|switch|catch|enumerate|return|r?iterate)\\s*\\()(?:(?!NS)[A-Za-z_][A-Za-z0-9_]*+\\b | :: )++                  # actual name\n\t\t\t)\n\t\t\t \\s*(\\()",
+                    "match": "(?x) (?: (?= \\s )  (?:(?<=else|return) | (?<!\\w)) (\\s+))?\n\t\t\t(\\b\n\t\t\t\t(?!(while|for|do|if|else|switch|select|return)\\s*\\()(?:(?!NS)[A-Za-z_][A-Za-z0-9_]*+\\b | :: )++                  # actual name\n\t\t\t)\n\t\t\t \\s*(\\()",
                     "name": "meta.function-call.netlinx"
                 },
                 {
@@ -386,7 +386,7 @@
                             "name": "punctuation.definition.parameters.netlinx"
                         }
                     },
-                    "match": "(?x)\n\t\t\t        (?x)\n\t\t\t(?:\n\t\t\t     (?: (?= \\s )           (?<!else|new|return) (?<=\\w)\\s+      #  or word + space before name\n\t\t\t     )\n\t\t\t)\n\t\t\t(\n\t\t\t\t(?: [A-Za-z_][A-Za-z0-9_]*+ | :: )++    |              # actual name\n\t\t\t\t(?: (?<=operator) (?: [-*&<>=+!]+ | \\(\\) | \\[\\] ) )?  # if it is a C++ operator\n\t\t\t)\n\t\t\t \\s*(\\()",
+                    "match": "(?x)\n\t\t\t        (?x)\n\t\t\t(?:\n\t\t\t     (?: (?= \\s )           (?<!else|return) (?<=\\w)\\s+      #  or word + space before name\n\t\t\t     )\n\t\t\t)\n\t\t\t(\n\t\t\t\t(?: [A-Za-z_][A-Za-z0-9_]*+ | :: )++    |              # actual name\n\t\t\t\t(?: (?<=operator) (?: [-*&<>=+!]+ | \\(\\) | \\[\\] ) )?  # if it is a NetLinx operator\n\t\t\t)\n\t\t\t \\s*(\\()",
                     "name": "meta.initialization.netlinx"
                 },
                 {
