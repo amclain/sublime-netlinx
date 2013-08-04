@@ -266,72 +266,10 @@
             ]
         },
         {
-            "begin": "^\\s*#\\s*(error|warning)\\b",
-            "captures": {
-                "1": {
-                    "name": "keyword.control.import.error.netlinx"
-                }
-            },
-            "end": "$",
-            "name": "meta.preprocessor.diagnostic.netlinx",
-            "patterns": [
-                {
-                    "match": "(?>\\\\\\s*\\n)",
-                    "name": "punctuation.separator.continuation.netlinx"
-                }
-            ]
-        },
-        {
-            "begin": "^\\s*#\\s*(include)\\b\\s+",
-            "captures": {
-                "1": {
-                    "name": "keyword.control.import.include.netlinx"
-                }
-            },
-            "end": "(?=(?://|/\\*))|$",
-            "name": "meta.preprocessor.c.include",
-            "patterns": [
-                {
-                    "match": "(?>\\\\\\s*\\n)",
-                    "name": "punctuation.separator.continuation.netlinx"
-                },
-                {
-                    "begin": "\"",
-                    "beginCaptures": {
-                        "0": {
-                            "name": "punctuation.definition.string.begin.netlinx"
-                        }
-                    },
-                    "end": "\"",
-                    "endCaptures": {
-                        "0": {
-                            "name": "punctuation.definition.string.end.netlinx"
-                        }
-                    },
-                    "name": "string.quoted.double.include.netlinx"
-                },
-                {
-                    "begin": "<",
-                    "beginCaptures": {
-                        "0": {
-                            "name": "punctuation.definition.string.begin.netlinx"
-                        }
-                    },
-                    "end": ">",
-                    "endCaptures": {
-                        "0": {
-                            "name": "punctuation.definition.string.end.netlinx"
-                        }
-                    },
-                    "name": "string.quoted.other.lt-gt.include.netlinx"
-                }
-            ]
-        },
-        {
             "include": "#pragma-mark"
         },
         {
-            "begin": "^\\s*#\\s*(define|defined|elif|else|if|ifdef|ifndef|line|pragma|undef)\\b",
+            "begin": "^\\s*#\\s*(define|if_defined|if_not_defined|include|warn)\\b",
             "captures": {
                 "1": {
                     "name": "keyword.control.import.netlinx"
