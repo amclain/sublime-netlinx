@@ -211,30 +211,6 @@
             "name": "constant.numeric.netlinx"
         },
         {
-            "comment": "double quoted string",
-            "begin": "\"",
-            "beginCaptures": {
-                "0": {
-                    "name": "punctuation.definition.string.begin.netlinx"
-                }
-            },
-            "end": "\"",
-            "endCaptures": {
-                "0": {
-                    "name": "punctuation.definition.string.end.netlinx"
-                }
-            },
-            "name": "string.quoted.double.netlinx",
-            "patterns": [
-                {
-                    "include": "#string_escaped_char"
-                },
-                {
-                    "include": "#string_placeholder"
-                }
-            ]
-        },
-        {
             "comment": "single quoted string",
             "begin": "'",
             "beginCaptures": {
