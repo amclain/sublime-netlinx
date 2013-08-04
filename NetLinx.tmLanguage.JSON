@@ -69,7 +69,7 @@
         {
             "comment": "Boolean Values",
             "match": "(?i)\\b(true|false)\\b",
-            "name": "keyword.control.netlinx"
+            "name": "constant.language.netlinx"
         },
         {
             "comment": "Conversion Keywords",
@@ -84,7 +84,7 @@
         {
             "comment": "Data Type Keywords",
             "match": "(?i)\\b(char|widechar|integer|sinteger|long|slong|float|double|dev|devchan)\\b",
-            "name": "keyword.control.netlinx"
+            "name": "support.type.sys-types.netlinx"
         },
         {
             "comment": "Define Keywords",
@@ -202,42 +202,11 @@
             "name": "keyword.control.netlinx"
         },
         {
-            "match": "\\b(break|case|continue|default|do|else|for|goto|if|_Pragma|return|switch|while)\\b",
-            "name": "keyword.control.netlinx"
-        },
-        {
-            "match": "\\b(asm|__asm__|auto|bool|_Bool|char|_Complex|double|enum|float|_Imaginary|int|long|short|signed|struct|typedef|union|unsigned|void)\\b",
-            "name": "storage.type.netlinx"
-        },
-        {
-            "match": "\\b(const|extern|register|restrict|static|volatile|inline)\\b",
-            "name": "storage.modifier.netlinx"
-        },
-        {
-            "comment": "common C constant naming idiom -- kConstantVariable",
-            "match": "\\bk[A-Z]\\w*\\b",
-            "name": "constant.other.variable.mac-classic.netlinx"
-        },
-        {
-            "match": "\\bg[A-Z]\\w*\\b",
-            "name": "variable.other.readwrite.global.mac-classic.netlinx"
-        },
-        {
-            "match": "\\bs[A-Z]\\w*\\b",
-            "name": "variable.other.readwrite.static.mac-classic.netlinx"
-        },
-        {
-            "match": "\\b(NULL|true|false|TRUE|FALSE)\\b",
-            "name": "constant.language.netlinx"
-        },
-        {
-            "include": "#sizeof"
-        },
-        {
             "match": "\\b((0(x|X)[0-9a-fA-F]*)|(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?)(L|l|UL|ul|u|U|F|f|ll|LL|ull|ULL)?\\b",
             "name": "constant.numeric.netlinx"
         },
         {
+            "comment": "double quoted string",
             "begin": "\"",
             "beginCaptures": {
                 "0": {
@@ -261,6 +230,7 @@
             ]
         },
         {
+            "comment": "single quoted string",
             "begin": "'",
             "beginCaptures": {
                 "0": {
@@ -331,7 +301,7 @@
             ]
         },
         {
-            "begin": "^\\s*#\\s*(include|import)\\b\\s+",
+            "begin": "^\\s*#\\s*(include)\\b\\s+",
             "captures": {
                 "1": {
                     "name": "keyword.control.import.include.netlinx"
@@ -394,26 +364,6 @@
                     "name": "punctuation.separator.continuation.netlinx"
                 }
             ]
-        },
-        {
-            "match": "\\b(u_char|u_short|u_int|u_long|ushort|uint|u_quad_t|quad_t|qaddr_t|caddr_t|daddr_t|dev_t|fixpt_t|blkcnt_t|blksize_t|gid_t|in_addr_t|in_port_t|ino_t|key_t|mode_t|nlink_t|id_t|pid_t|off_t|segsz_t|swblk_t|uid_t|id_t|clock_t|size_t|ssize_t|time_t|useconds_t|suseconds_t)\\b",
-            "name": "support.type.sys-types.netlinx"
-        },
-        {
-            "match": "\\b(pthread_attr_t|pthread_cond_t|pthread_condattr_t|pthread_mutex_t|pthread_mutexattr_t|pthread_once_t|pthread_rwlock_t|pthread_rwlockattr_t|pthread_t|pthread_key_t)\\b",
-            "name": "support.type.pthread.netlinx"
-        },
-        {
-            "match": "\\b(int8_t|int16_t|int32_t|int64_t|uint8_t|uint16_t|uint32_t|uint64_t|int_least8_t|int_least16_t|int_least32_t|int_least64_t|uint_least8_t|uint_least16_t|uint_least32_t|uint_least64_t|int_fast8_t|int_fast16_t|int_fast32_t|int_fast64_t|uint_fast8_t|uint_fast16_t|uint_fast32_t|uint_fast64_t|intptr_t|uintptr_t|intmax_t|intmax_t|uintmax_t|uintmax_t)\\b",
-            "name": "support.type.stdint.netlinx"
-        },
-        {
-            "match": "\\b(noErr|kNilOptions|kInvalidID|kVariableLengthArray)\\b",
-            "name": "support.constant.mac-classic.netlinx"
-        },
-        {
-            "match": "\\b(AbsoluteTime|Boolean|Byte|ByteCount|ByteOffset|BytePtr|CompTimeValue|ConstLogicalAddress|ConstStrFileNameParam|ConstStringPtr|Duration|Fixed|FixedPtr|Float32|Float32Point|Float64|Float80|Float96|FourCharCode|Fract|FractPtr|Handle|ItemCount|LogicalAddress|OptionBits|OSErr|OSStatus|OSType|OSTypePtr|PhysicalAddress|ProcessSerialNumber|ProcessSerialNumberPtr|ProcHandle|Ptr|ResType|ResTypePtr|ShortFixed|ShortFixedPtr|SignedByte|SInt16|SInt32|SInt64|SInt8|Size|StrFileName|StringHandle|StringPtr|TimeBase|TimeRecord|TimeScale|TimeValue|TimeValue64|UInt16|UInt32|UInt64|UInt8|UniChar|UniCharCount|UniCharCountPtr|UniCharPtr|UnicodeScalarValue|UniversalProcHandle|UniversalProcPtr|UnsignedFixed|UnsignedFixedPtr|UnsignedWide|UTF16Char|UTF32Char|UTF8Char)\\b",
-            "name": "support.type.mac-classic.netlinx"
         },
         {
             "include": "#block"
@@ -850,10 +800,6 @@
                     "include": "#block_innards"
                 }
             ]
-        },
-        "sizeof": {
-            "match": "\\b(sizeof)\\b",
-            "name": "keyword.operator.sizeof.netlinx"
         },
         "string_escaped_char": {
             "patterns": [
