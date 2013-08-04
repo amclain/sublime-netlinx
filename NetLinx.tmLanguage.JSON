@@ -7,7 +7,7 @@
     "foldingStartMarker": "(?x)\n\t\t /\\*\\*(?!\\*)\n\t\t|^(?![^{]*?//|[^{]*?/\\*(?!.*?\\*/.*?\\{)).*?\\{\\s*($|//|/\\*(?!.*?\\*/.*\\S))\n\t",
     "foldingStopMarker": "(?<!\\*)\\*\\*/|^\\s*\\}",
     "keyEquivalent": "^~C",
-    "name": "Netlinx",
+    "name": "NetLinx",
     "patterns": [
         {
             "include": "#preprocessor-rule-enabled"
