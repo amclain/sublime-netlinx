@@ -356,21 +356,6 @@
                 {
                     "captures": {
                         "1": {
-                            "name": "punctuation.whitespace.function-call.leading.netlinx"
-                        },
-                        "2": {
-                            "name": "support.function.any-method.netlinx"
-                        },
-                        "3": {
-                            "name": "punctuation.definition.parameters.netlinx"
-                        }
-                    },
-                    "match": "(?x) (?: (?= \\s )  (?:(?<=else|return) | (?<!\\w)) (\\s+))?\n\t\t\t(\\b\n\t\t\t\t(?!(while|for|do|if|else|switch|select|return)\\s*\\()(?:(?!NS)[A-Za-z_][A-Za-z0-9_]*+\\b | :: )++                  # actual name\n\t\t\t)\n\t\t\t \\s*(\\()",
-                    "name": "meta.function-call.netlinx"
-                },
-                {
-                    "captures": {
-                        "1": {
                             "name": "variable.other.netlinx"
                         },
                         "2": {
