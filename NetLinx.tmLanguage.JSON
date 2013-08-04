@@ -84,11 +84,11 @@
         {
             "comment": "Data Type Keywords",
             "match": "(?i)\\b(char|widechar|integer|sinteger|long|slong|float|double|dev|devchan)\\b",
-            "name": "support.type.sys-types.netlinx"
+            "name": "support.type.system.netlinx"
         },
         {
             "comment": "Define Keywords",
-            "match": "(?i)\\b(define_call|define_combine|define_connect_level|define_constant|define_device|define_event|define_function|define_latching|define_module|define_mutually_exclusive|define_program|define_start|define_toggling|define_type|define_variable|program_name)\\b",
+            "match": "(?i)\\b(define_call|define_combine|define_connect_level|define_constant|define_device|define_event|define_latching|define_module|define_mutually_exclusive|define_program|define_start|define_toggling|define_type|define_variable|program_name)\\b",
             "name": "keyword.control.define.netlinx"
         },
         {
@@ -288,35 +288,23 @@
             "include": "#block"
         },
         {
-            "begin": "(?x)\n    \t\t(?:  ^                                 # begin-of-line\n    \t\t  |\n    \t\t     (?: (?= \\s )           (?<!else|return) (?<=\\w)      #  or word + space before name\n    \t\t       | (?= \\s*[A-Za-z_] ) (?<!&&)       (?<=[*&>])   #  or type modifier before name\n    \t\t     )\n    \t\t)\n    \t\t(\\s*) (?!(while|for|do|if|else|switch|select|return)\\s*\\()\n    \t\t(\n    \t\t\t(?: [A-Za-z_][A-Za-z0-9_]*+ | :: )++ |                  # actual name\n    \t\t\t(?: (?<=operator) (?: [-*&<>=+!]+ | \\(\\) | \\[\\] ) )  # if it is a NetLinx operator\n    \t\t)\n    \t\t \\s*(?=\\()",
-            "beginCaptures": {
+            "comment": "function name",
+            "match": "(?i)\\s*\\b(define_function)\\b\\s+(?:(char|widechar|integer|sinteger|long|slong|float|double|dev|devchan)\\s+)?([a-z][a-z0-9_]*)\\s*\\(",
+            "captures": {
                 "1": {
-                    "name": "punctuation.whitespace.function.leading.netlinx"
+                    "name": "keyword.control.define.netlinx"
+                },
+                "2": {
+                    "name": "support.type.system.netlinx"
                 },
                 "3": {
                     "name": "entity.name.function.netlinx"
-                },
-                "4": {
-                    "name": "punctuation.definition.parameters.netlinx"
                 }
             },
-            "end": "(?<=\\})|(?=#)|(;)",
-            "name": "meta.function.netlinx",
-            "patterns": [
-                {
-                    "include": "#comments"
-                },
-                {
-                    "include": "#parens"
-                },
-                {
-                    "match": "\\b(const|override)\\b",
-                    "name": "storage.modifier.netlinx"
-                },
-                {
-                    "include": "#block"
-                }
-            ]
+        },
+        {
+          "match": "(?i)\\b(define_function)\\b",
+          "name": "keyword.control.define.netlinx"
         }
     ],
     "repository": {
