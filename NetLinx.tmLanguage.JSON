@@ -23,7 +23,7 @@
         },
         {
             "comment": "Compiler Directives",
-            "match": "(?i)(#\\b(define|disable_warning|else|end_if|if_defined|if_not_defined|include|warn)\\b)",
+            "match": "(?i)(\\s*#\\b(define|disable_warning|else|end_if|if_defined|if_not_defined|include|warn)\\b)",
             "name": "keyword.control.netlinx"
         },
         {
