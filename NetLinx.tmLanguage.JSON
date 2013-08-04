@@ -22,6 +22,28 @@
             "include": "#comments"
         },
         {
+            "comment": "Device Number",
+            "match": "(\\d{1,5})(:)(\\d{1,5})(:)(\\d{1,5})",
+            "name": "constant.numeric.dps.netlinx",
+            "captures": {
+                "1": {
+                    "name": "constant.numeric.dps.device.netlinx"
+                },
+                "2": {
+                    "name": "constant.numeric.dps.colon.netlinx"
+                },
+                "3": {
+                    "name": "constant.numeric.dps.port.netlinx"
+                },
+                "4": {
+                    "name": "constant.numeric.dps.colon.netlinx"
+                },
+                "5": {
+                    "name": "constant.numeric.dps.system.netlinx"
+                }
+            }
+        },
+        {
             "match": "\\b((0(x|X)[0-9a-fA-F]*)|(([0-9]+\\.?[0-9]*)|(\\.[0-9]+))((e|E)(\\+|-)?[0-9]+)?)(L|l|UL|ul|u|U|F|f|ll|LL|ull|ULL)?\\b",
             "name": "constant.numeric.netlinx"
         },
