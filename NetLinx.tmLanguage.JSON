@@ -343,8 +343,13 @@
                 },
                 {
                     "comment": "Variables Keywords",
-                    "match": "(?i)\\b(abs_value|local_var|max_value|min_value|non_volatile|persistent|random_number|stack_var|type_cast|volatile)\\b",
+                    "match": "(?i)\\b(abs_value|max_value|min_value|random_number|type_cast)\\b",
                     "name": "support.function.variable.usp"
+                },
+                {
+                    "comment": "Variable Modifiers",
+                    "match": "(?i)\\b(non_volatile|persistent|local_var|stack_var|volatile)\\b",
+                    "name": "storage.modifier.netlinx"
                 },
                 {
                     "comment": "Wait Keywords",
