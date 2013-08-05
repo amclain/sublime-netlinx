@@ -149,12 +149,18 @@
         },
         {
             "comment": "device/channel in brackets",
-            "match": "(?i)\\[\\s*\\b([a-z_][a-z0-9_]*)\\b(?:\\s*,\\s*([a-z_][a-z0-9_]*))?\\s*\\]",
+            "match": "(?i)(?:^|\\s+|(button_event|channel_event|level_event|data_event)|(do_push|do_push_timed|do_release|min_to|push|push_channel|push_devchan|push_device|release|release_channel|release_devchan|release_device|to))\\[\\s*\\b([a-z_][a-z0-9_]*)\\b(?:\\s*,\\s*([a-z_][a-z0-9_\\.]*))?\\s*\\]",
             "captures": {
                 "1": {
-                    "name": "variable.parameter.netlinx"
+                    "name": "keyword.control.event.netlinx"
                 },
                 "2": {
+                    "name": "support.function.netlinx"
+                },
+                "3": {
+                    "name": "variable.parameter.netlinx"
+                },
+                "4": {
                     "name": "variable.parameter.netlinx"
                 }
             }
