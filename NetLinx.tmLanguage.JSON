@@ -24,19 +24,19 @@
         {
             "comment": "Device Number",
             "match": "(\\d{1,5})(:)(\\d{1,5})(:)(\\d{1,5})",
-            "name": "constant.numeric.dps.netlinx",
+            "name": "meta.dps.netlinx",
             "captures": {
                 "1": {
                     "name": "constant.numeric.dps.device.netlinx"
                 },
                 "2": {
-                    "name": "constant.numeric.dps.colon.netlinx"
+                    "name": "punctuation.colon.dps.netlinx"
                 },
                 "3": {
                     "name": "constant.numeric.dps.port.netlinx"
                 },
                 "4": {
-                    "name": "constant.numeric.dps.colon.netlinx"
+                    "name": "punctuation.colon.dps.netlinx"
                 },
                 "5": {
                     "name": "constant.numeric.dps.system.netlinx"
