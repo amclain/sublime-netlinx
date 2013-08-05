@@ -300,7 +300,7 @@
                 },
                 {
                     "comment": "Operator Keywords",
-                    "match": "(\\&|~|\\||\\^|<<|\\%|\\!|>>)",
+                    "match": "(\\&|~|\\||\\^|<<|\\%|\\!|>>|=)",
                     "name": "keyword.operator.netlinx"
                 },
                 {
