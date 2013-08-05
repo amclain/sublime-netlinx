@@ -340,22 +340,11 @@
                     "name": "support.function.wait.usp"
                 },
                 {
-                    "comment": "Event Variables",
-                    "match": "(?i)\\b(button|channel|level|data)\\b(?:\\.\\b(holdtime|input|device|sourcedev|text|value|number|sourceip|sourceport)\\b)?",
-                    "comment": "support.type.system.button.netlinx",
-                    "captures": {
-                        "1": {
-                            "name": "support.type.system.button.netlinx",
-                        },
-                        "2": {
-                            "name": "support.type.system.button.netlinx",
-                        }
-                    }
+                    "include": "#dps_variables"
                 },
                 {
-                    "comment": "input.device",
-                    "match": "(?i)\\.\\b(input)\\b(?:\\.\\b(device)\\b)",
-                    "comment": "support.type.system.button.netlinx",
+                    "comment": "Event Variables",
+                    "match": "(?i)\\b(button|channel|level|data)\\b(?:\\.\\b(holdtime|device|sourcedev|text|value|number|sourceip|sourceport|input)\\b)?",
                     "captures": {
                         "1": {
                             "name": "support.type.system.button.netlinx",
