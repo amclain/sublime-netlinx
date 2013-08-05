@@ -148,6 +148,18 @@
             },
         },
         {
+            "comment": "device/channel in brackets",
+            "match": "(?i)\\[\\s*\\b([a-z_][a-z0-9_]*)\\b(?:\\s*,\\s*([a-z_][a-z0-9_]*))?\\s*\\]",
+            "captures": {
+                "1": {
+                    "name": "variable.parameter.netlinx"
+                },
+                "2": {
+                    "name": "variable.parameter.netlinx"
+                }
+            }
+        },
+        {
             "include": "#netlinx_keywords"
         }
     ],
