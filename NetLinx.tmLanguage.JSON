@@ -338,12 +338,46 @@
                     "comment": "Wait Keywords",
                     "match": "(?i)\\b(cancel_all_wait|cancel_all_wait_until|cancel_wait|cancel_wait_until|pause_all_wait|pause_wait|restart_all_wait|restart_wait|wait|wait_until|timed_wait_until)\\b",
                     "name": "support.function.wait.usp"
-                }
+                },
+                {
+                    "comment": "Event Variables",
+                    "match": "(?i)\\b(button|channel|level|data)\\b(?:\\.\\b(holdtime|input|device|sourcedev|text|value|number|sourceip|sourceport)\\b)?",
+                    "comment": "support.type.system.button.netlinx",
+                    "captures": {
+                        "1": {
+                            "name": "support.type.system.button.netlinx",
+                        },
+                        "2": {
+                            "name": "support.type.system.button.netlinx",
+                        }
+                    }
+                },
+                {
+                    "comment": "input.device",
+                    "match": "(?i)\\.\\b(input)\\b(?:\\.\\b(device)\\b)",
+                    "comment": "support.type.system.button.netlinx",
+                    "captures": {
+                        "1": {
+                            "name": "support.type.system.button.netlinx",
+                        },
+                        "2": {
+                            "name": "support.type.system.button.netlinx",
+                        }
+                    }
+                },
             ]
         },
+        "dps_variables": {
+            "match": "(?i)[a-z0-9_]+\\.\\b(number|port|system)\\b",
+            "captures": {
+                "1": {
+                    "name": "support.type.system.dps.dot-access.netlinx"
+                }
+            }
+        },
         "access": {
-            "match": "\\.[a-zA-Z_][a-zA-Z_0-9]*\\b(?!\\s*\\()",
-            "name": "variable.other.dot-access.netlinx"
+            "match": "(?i)\\.[a-zA-Z_][a-zA-Z_0-9]*\\b(?!\\s*\\()",
+            "name": "variable.other.dot-access.netlinx",
         },
         "block": {
             "begin": "\\{",
