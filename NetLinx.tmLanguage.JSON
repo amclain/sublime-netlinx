@@ -341,7 +341,7 @@
                 },
                 {
                     "comment": "Event Variables",
-                    "match": "(?i)\\b(button|channel|level|data)\\b(?:\\.\\b(holdtime|device|sourcedev|text|value|number|sourceip|sourceport|input)\\b(?:\\.\\b(device|number|port|system)\\b(?:\\.\\b(number|port|system)\\b)?)?)?",
+                    "match": "(?i)\\b(button|channel|level|data)\\b(?:\\.\\b(channel|holdtime|device|sourcedev|text|value|number|sourceip|sourceport|input)\\b(?:\\.\\b(channel|level|device|number|port|system)\\b(?:\\.\\b(number|port|system)\\b)?)?)?",
                     "captures": {
                         "1": {
                             "name": "support.type.system.button.netlinx",
