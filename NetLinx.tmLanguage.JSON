@@ -166,16 +166,8 @@
                     "include": "#netlinx_keywords"
                 },
                 {
-                    "comment": "(?i)\\s*\\b([a-z_][a-z0-9_]*)\\b(?:\\s*,\\s*([a-z_][a-z0-9_\\.]*))?\\s*",
-                    "match": "(?i)\\s*\\b([a-z_][a-z0-9_]*)\\b(?:\\s*,\\s*([a-z_][a-z0-9_]*))?\\s*",
-                    "captures": {
-                        "1": {
-                            "name": "variable.parameter.netlinx"
-                        },
-                        "2": {
-                            "name": "variable.parameter.netlinx"
-                        }
-                    }
+                    "match": "(?i)(?<!\\.)\\b([a-z]\\w*)\\b(?!\\.)",
+                    "name": "variable.parameter.netlinx"
                 }
             ]
         },
