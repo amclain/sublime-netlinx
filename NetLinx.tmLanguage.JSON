@@ -134,7 +134,7 @@
         },
         {
             "comment": "function name",
-            "match": "(?i)\\s*\\b(define_function)\\b\\s+(?:(char|widechar|integer|sinteger|long|slong|float|double|dev|devchan)\\s+)?([a-z][a-z0-9_]*)\\s*\\(",
+            "match": "(?i)\\s*\\b(define_function)\\b\\s+(?:(char|widechar|integer|sinteger|long|slong|float|double|dev|devchan)(?:\\[\\w*\\])*\\s+)?([a-z_][a-z0-9_]*)\\s*\\(",
             "captures": {
                 "1": {
                     "name": "keyword.control.define.netlinx"

@@ -50,11 +50,26 @@
             }
         },
         {
+            "name": "Array Parameters",
+            "scope": "variable.parameter.array",
+            "settings": {
+                "foreground": "#0000FF"
+            }
+        },
+        {
             "name": "Keyword",
             "scope": "keyword, support.function",
             "settings": {
             	"fontStyle": "bold",
                 "foreground": "#0000FF"
+            }
+        },
+        {
+            "name": "Operators",
+            "scope": "keyword.operator",
+            "settings": {
+            	"fontStyle": "bold",
+                "foreground": "#FF0000"
             }
         },
         {
@@ -69,7 +84,7 @@
             "name": "Storage type",
             "scope": "storage.type, support.type, support.class",
             "settings": {
-                "fontStyle": "",
+                "fontStyle": "bold",
                 "foreground": "#0000FF"
             }
         },
