@@ -102,14 +102,6 @@
             }
         },
         {
-            "name": "Function name",
-            "scope": "entity.name.function",
-            "settings": {
-                "fontStyle": "",
-                "foreground": "#0000FF"
-            }
-        },
-        {
             "name": "Variable",
             "scope": "variable, support.variable",
             "settings": {
