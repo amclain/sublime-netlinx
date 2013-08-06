@@ -363,24 +363,6 @@
                     "name": "support.function.wait.netlinx"
                 },
                 {
-                    "comment": "Event Variables",
-                    "match": "(?i)\\b(button|channel|level|data)\\b(?:\\.\\b(channel|holdtime|device|sourcedev|text|value|number|sourceip|sourceport|input)\\b(?:\\.\\b(channel|level|device|number|port|system)\\b(?:\\.\\b(number|port|system)\\b)?)?)?",
-                    "captures": {
-                        "1": {
-                            "name": "support.variable.system.netlinx",
-                        },
-                        "2": {
-                            "name": "support.variable.system.netlinx",
-                        },
-                        "3": {
-                            "name": "support.variable.system.netlinx",
-                        },
-                        "4": {
-                            "name": "support.variable.system.netlinx",
-                        }
-                    }
-                },
-                {
                     "include": "#dps_variables"
                 },
                 {
