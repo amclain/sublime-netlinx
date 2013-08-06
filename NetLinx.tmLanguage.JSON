@@ -148,9 +148,7 @@
             },
         },
         {
-            "comment": "Constants",
-            "match": "\\b(dv|vdv|btn|lvl|ch|adr)?([A-Z0-9_]+)\\b",
-            "name": "constant.other.netlinx"
+            "include": "#netlinx_constants"
         },
         {
             "comment": "device/channel in brackets",
@@ -172,6 +170,9 @@
             "patterns": [
                 {
                     "include": "#netlinx_keywords"
+                },
+                {
+                    "include": "#netlinx_constants"
                 },
                 {
                     "match": "(?i)(?<!\\.)\\b([a-z]\\w*)\\b(?!\\.)",
@@ -410,6 +411,10 @@
                     "include": "#dps_variables"
                 },
             ]
+        },
+        "netlinx_constants": {
+            "match": "\\b(dv|vdv|btn|lvl|ch|adr)?([A-Z0-9_]+)\\b",
+            "name": "constant.other.netlinx"
         },
         "dps_variables": {
             "match": "(?i)[a-z0-9_]+\\.\\b(number|port|system)\\b",

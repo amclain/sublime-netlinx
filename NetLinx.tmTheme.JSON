@@ -51,17 +51,18 @@
             }
         },
         {
-            "name": "Array Parameters",
-            "scope": "variable.parameter.array",
+            "name": "Keyword",
+            "scope": "keyword",
             "settings": {
+            	"fontStyle": "bold",
                 "foreground": "#0000FF"
             }
         },
         {
-            "name": "Keyword",
-            "scope": "keyword, support.function",
+            "name": "Support Functions",
+            "scope": "support.function",
             "settings": {
-            	"fontStyle": "bold",
+            	"fontStyle": "",
                 "foreground": "#0000FF"
             }
         },
@@ -107,7 +108,7 @@
         },
         {
             "name": "Variable",
-            "scope": "variable.other, support.variable",
+            "scope": "variable, support.variable",
             "settings": {
                 "fontStyle": "",
                 "foreground": "#AD3AC2"
