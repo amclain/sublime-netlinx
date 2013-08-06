@@ -90,6 +90,14 @@
             }
         },
         {
+            "name": "Variable",
+            "scope": "variable.other, support.variable",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#AD3AC2"
+            }
+        },
+        {
             "name": "Invalid",
             "scope": "invalid",
             "settings": {
