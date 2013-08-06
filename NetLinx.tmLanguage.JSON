@@ -184,6 +184,11 @@
             "include": "#netlinx_keywords"
         },
         {
+            "comment": "user function names (alphanumeric before parenthesis)",
+            "match": "(?i)(?i)\\b([a-z_][a-z0-9_]*)\\b(?=\\s*\\()",
+            "name": "entity.function.netlinx"
+        },
+        {
             "comment": "Variables (every word not matched)",
             "match": "\\w+",
             "name": "variable.other.netlinx"
