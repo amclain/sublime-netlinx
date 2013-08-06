@@ -114,22 +114,6 @@
             "include": "#pragma-mark"
         },
         {
-            "begin": "(?i)^\\s*(#(define|if_defined|if_not_defined|include|warn))\\b",
-            "captures": {
-                "1": {
-                    "name": "keyword.control.import.netlinx"
-                }
-            },
-            "end": "(?=(?://|/\\*))|$",
-            "name": "meta.preprocessor.netlinx",
-            "patterns": [
-                {
-                    "match": "(?>\\\\\\s*\\n)",
-                    "name": "punctuation.separator.continuation.netlinx"
-                }
-            ]
-        },
-        {
             "include": "#block"
         },
         {
