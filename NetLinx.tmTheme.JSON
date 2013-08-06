@@ -44,8 +44,9 @@
         },
         {
             "name": "Constant",
-            "scope": "support.constant",
+            "scope": "constant, support.constant",
             "settings": {
+            	"fontStyle": "",
                 "foreground": "#0000FF"
             }
         },

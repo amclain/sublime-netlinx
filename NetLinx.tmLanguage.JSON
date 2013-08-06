@@ -148,6 +148,11 @@
             },
         },
         {
+            "comment": "Constants",
+            "match": "\\b(dv|vdv|btn|lvl|ch|adr)?([A-Z0-9_]+)\\b",
+            "name": "constant.other.netlinx"
+        },
+        {
             "comment": "device/channel in brackets",
             "comment": "Capture 3 conflicts with constant array definitions.",
             "begin": "(?i)(?:^|\\s+|(button_event|channel_event|level_event|data_event|hold)|(do_push|do_push_timed|do_release|min_to|push|push_channel|push_devchan|push_device|release|release_channel|release_devchan|release_device|to)|(\\w*))\\[",
@@ -240,6 +245,18 @@
                     "comment": "Data Event Keywords",
                     "match": "(?i)\\b(awake|command|hold|onerror|offline|online|standby)\\b",
                     "name": "keyword.control.event.data.netlinx"
+                },
+                {
+                    "comment": "Data Type Keywords",
+                    "match": "(?i)\\b(char|widechar|integer|sinteger|long|slong|float|double|dev|devchan)\\b\\s+([a-z_]\\w*)",
+                    "captures": {
+                        "1": {
+                            "name": "support.type.system.netlinx",
+                        },
+                        "2": {
+                            "name": "support.variable.system.netlinx",
+                        }
+                    }
                 },
                 {
                     "comment": "Data Type Keywords",
@@ -398,7 +415,7 @@
             "match": "(?i)[a-z0-9_]+\\.\\b(number|port|system)\\b",
             "captures": {
                 "1": {
-                    "name": "support.type.system.dps.dot-access.netlinx"
+                    "name": "support.variable.system.dps.dot-access.netlinx"
                 }
             }
         },
