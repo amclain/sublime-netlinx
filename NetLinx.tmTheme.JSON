@@ -102,6 +102,14 @@
             }
         },
         {
+        	"name": "User Defined Function Definition",
+        	"scope": "entity.name.function",
+        	"settings": {
+        		"fontStyle": "bold",
+        		"foreground": "#0000FF"
+        	}
+        },
+        {
             "name": "Variable",
             "scope": "variable, support.variable",
             "settings": {
