@@ -3,21 +3,21 @@
     "settings": [
         {
             "settings": {
-                "activeGuide": "#808080",
+                "guide": "#FF0000",
                 "background": "#FFFFFF",
                 "bracketContentsForeground": "#F8F8F2A5",
                 "bracketContentsOptions": "underline",
                 "bracketsForeground": "#F8F8F2A5",
                 "bracketsOptions": "underline",
-                "caret": "#000000",
-                "findHighlight": "#0A246A",
+                "caret": "#FF0000",
+                "findHighlight": "#FFFF00",
                 "findHighlightForeground": "#FFFFFF",
                 "foreground": "#000000",
                 "invisibles": "#808080",
                 "lineHighlight": "#C6D6FF",
-                "selection": "#0A246A",
-                "selectionBorder": "#0A246A",
-                "selectionForeground": "#FFFFFF",
+                "selection": "#FFFF00",
+                "selectionBorder": "#FFFF00",
+                "selectionForeground": "#0000FF",
                 "tagsOptions": "stippled_underline"
             }
         },
@@ -45,13 +45,6 @@
         {
             "name": "Constant",
             "scope": "support.constant",
-            "settings": {
-                "foreground": "#0000FF"
-            }
-        },
-        {
-            "name": "Hex",
-            "scope": "constant.numeric.hex",
             "settings": {
                 "foreground": "#0000FF"
             }
