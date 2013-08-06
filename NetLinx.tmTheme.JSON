@@ -110,6 +110,14 @@
         	}
         },
         {
+        	"name": "User Defined Types In Functions",
+        	"scope": "support.type.user",
+        	"settings": {
+        		"fontStyle": "",
+        		"foreground": "#0000FF"
+        	}
+        },
+        {
             "name": "Variable",
             "scope": "variable, support.variable",
             "settings": {

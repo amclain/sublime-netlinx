@@ -118,8 +118,8 @@
         },
         {
             "comment": "function name",
-            "match": "(?i)\\s*\\b(define_function)\\b\\s+(?:(char|widechar|integer|sinteger|long|slong|float|double|dev|devchan)(?:\\[\\w*\\])*\\s+)?([a-z_][a-z0-9_]*)\\s*\\(",
-            "captures": {
+            "begin": "(?i)\\s*\\b(define_function)\\b\\s+(?:(char|widechar|integer|sinteger|long|slong|float|double|dev|devchan)(?:\\[\\w*\\])*\\s+)?([a-z_][a-z0-9_]*)\\s*\\(",
+            "beginCaptures": {
                 "1": {
                     "name": "keyword.control.define.netlinx"
                 },
@@ -130,6 +130,20 @@
                     "name": "entity.name.function.netlinx"
                 }
             },
+            "end": "\\)",
+            "patterns": [
+                {
+                    "include": "#netlinx_keywords"
+                },
+                {
+                    "comment": "type/variable pairs where type is user-defined (a struct)",
+                    "match": "(?i)([a-z_][a-z0-9_]*)(?=\\s+)",
+                    "name": "support.type.user.netlinx"
+                },
+                {
+                    "include": "#netlinx_variables"
+                }
+            ]
         },
         {
             "include": "#netlinx_keywords"
@@ -140,9 +154,7 @@
             "name": "support.function.user.netlinx"
         },
         {
-            "comment": "Variables (every word not matched)",
-            "match": "\\w+",
-            "name": "variable.other.netlinx"
+            "include": "#netlinx_variables"
         }
     ],
     "repository": {
@@ -387,6 +399,11 @@
                     "name": "support.variable.system.dps.dot-access.netlinx"
                 }
             }
+        },
+        "netlinx_variables": {
+            "comment": "Variables (every word not matched)",
+            "match": "\\w+",
+            "name": "variable.other.netlinx"
         },
         "access": {
             "match": "(?i)\\.[a-zA-Z_][a-zA-Z_0-9]*\\b(?!\\s*\\()",
