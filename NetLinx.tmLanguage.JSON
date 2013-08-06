@@ -50,7 +50,7 @@
         {
             "comment": "hex",
             "match": "(\\$[0-9a-fA-F]+)",
-            "name": "constant.numeric.netlinx"
+            "name": "constant.numeric.hex.netlinx"
         },
         {
             "comment": "single quoted string",
@@ -150,7 +150,7 @@
         {
             "comment": "device/channel in brackets",
             "comment": "Capture 3 conflicts with constant array definitions.",
-            "begin": "(?i)(?:^|\\s+|(button_event|channel_event|level_event|data_event)|(do_push|do_push_timed|do_release|min_to|push|push_channel|push_devchan|push_device|release|release_channel|release_devchan|release_device|to)|(\\w*))\\[",
+            "begin": "(?i)(?:^|\\s+|(button_event|channel_event|level_event|data_event|hold)|(do_push|do_push_timed|do_release|min_to|push|push_channel|push_devchan|push_device|release|release_channel|release_devchan|release_device|to)|(\\w*))\\[",
             "end": "\\]",
             "name": "brackets.netlinx",
             "beginCaptures": {

@@ -1,0 +1,110 @@
+{
+    "name": "NetLinx",
+    "settings": [
+        {
+            "settings": {
+                "activeGuide": "#808080",
+                "background": "#FFFFFF",
+                "bracketContentsForeground": "#F8F8F2A5",
+                "bracketContentsOptions": "underline",
+                "bracketsForeground": "#F8F8F2A5",
+                "bracketsOptions": "underline",
+                "caret": "#000000",
+                "findHighlight": "#0A246A",
+                "findHighlightForeground": "#FFFFFF",
+                "foreground": "#000000",
+                "invisibles": "#808080",
+                "lineHighlight": "#C6D6FF",
+                "selection": "#0A246A",
+                "selectionBorder": "#0A246A",
+                "selectionForeground": "#FFFFFF",
+                "tagsOptions": "stippled_underline"
+            }
+        },
+        {
+            "name": "Comment",
+            "scope": "comment",
+            "settings": {
+                "foreground": "#009300"
+            }
+        },
+        {
+            "name": "String",
+            "scope": "string",
+            "settings": {
+                "foreground": "#FF0000"
+            }
+        },
+        {
+            "name": "Number",
+            "scope": "constant.numeric",
+            "settings": {
+                "foreground": "#000000"
+            }
+        },
+        {
+            "name": "Constant",
+            "scope": "support.constant",
+            "settings": {
+                "foreground": "#0000FF"
+            }
+        },
+        {
+            "name": "Hex",
+            "scope": "constant.numeric.hex",
+            "settings": {
+                "foreground": "#0000FF"
+            }
+        },
+        {
+            "name": "Keyword",
+            "scope": "keyword, support.function",
+            "settings": {
+            	"fontStyle": "bold",
+                "foreground": "#0000FF"
+            }
+        },
+        {
+            "name": "Storage",
+            "scope": "storage",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#000000"
+            }
+        },
+        {
+            "name": "Storage type",
+            "scope": "storage.type, support.type, support.class",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#0000FF"
+            }
+        },
+        {
+            "name": "Entity",
+            "scope": "entity",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#0000FF"
+            }
+        },
+        {
+            "name": "Function name",
+            "scope": "entity.name.function",
+            "settings": {
+                "fontStyle": "",
+                "foreground": "#0000FF"
+            }
+        },
+        {
+            "name": "Invalid",
+            "scope": "invalid",
+            "settings": {
+                "background": "#FFFF00",
+                "fontStyle": "",
+                "foreground": "#FFFFFF"
+            }
+        }
+    ],
+    "uuid": "D8D5E82E-3D5B-46B5-B38E-8C841C21347D"
+}
