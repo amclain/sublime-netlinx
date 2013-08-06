@@ -25,6 +25,7 @@
             "name": "Comment",
             "scope": "comment",
             "settings": {
+            	"fontStyle": "",
                 "foreground": "#009300"
             }
         },
@@ -32,6 +33,7 @@
             "name": "String",
             "scope": "string",
             "settings": {
+            	"fontStyle": "",
                 "foreground": "#FF0000"
             }
         },
@@ -39,6 +41,7 @@
             "name": "Number",
             "scope": "constant.numeric",
             "settings": {
+            	"fontStyle": "",
                 "foreground": "#000000"
             }
         },
@@ -70,8 +73,8 @@
             "name": "Operators",
             "scope": "keyword.operator",
             "settings": {
-            	"fontStyle": "bold",
-                "foreground": "#FF0000"
+            	"fontStyle": "",
+                "foreground": "#000000"
             }
         },
         {

@@ -182,6 +182,11 @@
         },
         {
             "include": "#netlinx_keywords"
+        },
+        {
+            "comment": "Variables (every word not matched)",
+            "match": "\\w+",
+            "name": "variable.other.netlinx"
         }
     ],
     "repository": {
