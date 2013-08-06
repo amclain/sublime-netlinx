@@ -82,12 +82,12 @@
             "scope": "storage",
             "settings": {
                 "fontStyle": "",
-                "foreground": "#000000"
+                "foreground": "#0000FF"
             }
         },
         {
             "name": "Storage type",
-            "scope": "storage.type, support.type, support.class",
+            "scope": "storage.type, storage.modifier, support.type, support.class",
             "settings": {
                 "fontStyle": "bold",
                 "foreground": "#0000FF"
