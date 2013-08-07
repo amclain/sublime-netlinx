@@ -353,7 +353,7 @@
                 },
                 {
                     "comment": "Variable Modifiers",
-                    "match": "(?i)\\b(non_volatile|persistent|local_var|stack_var|volatile)\\b",
+                    "match": "(?i)\\b(constant|non_volatile|persistent|local_var|stack_var|volatile)\\b",
                     "name": "storage.modifier.netlinx"
                 },
                 {
