@@ -62,14 +62,6 @@
             }
         },
         {
-            "name": "Support Functions",
-            "scope": "support.function",
-            "settings": {
-            	"fontStyle": "",
-                "foreground": "#0000FF"
-            }
-        },
-        {
             "name": "Operators",
             "scope": "keyword.operator",
             "settings": {
@@ -102,7 +94,23 @@
             }
         },
         {
-        	"name": "User Defined Function Definition",
+            "name": "Language Functions",
+            "scope": "support.function",
+            "settings": {
+            	"fontStyle": "bold",
+                "foreground": "#0000FF"
+            }
+        },
+        {
+            "name": "User Functions",
+            "scope": "support.function.user",
+            "settings": {
+            	"fontStyle": "",
+                "foreground": "#0000FF"
+            }
+        },
+        {
+        	"name": "User Function Definitions",
         	"scope": "entity.name.function",
         	"settings": {
         		"fontStyle": "bold",
