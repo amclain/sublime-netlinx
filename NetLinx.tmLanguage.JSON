@@ -221,7 +221,7 @@
                 },
                 {
                     "comment": "Data Type Keywords",
-                    "match": "(?i)\\b(char|widechar|integer|sinteger|long|slong|float|double|dev|devchan)\\b\\s+([a-z_]\\w*)",
+                    "match": "(?i)\\b(char|widechar|integer|sinteger|long|slong|float|double|dev|devchan)\\b\\s+([a-z_]\\w*)\\b(?!\\()",
                     "captures": {
                         "1": {
                             "name": "support.type.system.netlinx",
