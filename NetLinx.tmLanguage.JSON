@@ -118,20 +118,19 @@
         },
         {
             "comment": "function name",
-            "begin": "(?i)\\s*\\b(define_function)\\b\\s+(?:(char|widechar|integer|sinteger|long|slong|float|double|dev|devchan)(?:\\[\\w*\\])*\\s+)?([a-z_][a-z0-9_]*)\\s*\\(",
+            "begin": "(?i)\\s*\\b(define_function)\\b\\s+",
             "beginCaptures": {
                 "1": {
                     "name": "keyword.control.define.netlinx"
-                },
-                "2": {
-                    "name": "support.type.system.netlinx"
-                },
-                "3": {
-                    "name": "entity.name.function.netlinx"
                 }
             },
             "end": "\\)",
             "patterns": [
+                {
+                    "comment": "function name",
+                    "match": "(?i)\\b([a-z_]\\w*)\\b(?=\\s*\\()",
+                    "name": "entity.name.function.netlinx"
+                },
                 {
                     "include": "#netlinx_keywords"
                 },
