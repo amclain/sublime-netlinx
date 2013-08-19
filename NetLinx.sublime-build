@@ -1,0 +1,14 @@
+{
+	"shell_cmd": "netlinx-compile \"${file}\"",
+	"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+	"working_dir": "${file_path}",
+	"selector": "source.netlinx",
+
+	"variants":
+	[
+		{
+			"name": "Run",
+			"shell_cmd": "netlinx-compile \"${file}\""
+		},
+	]
+}
