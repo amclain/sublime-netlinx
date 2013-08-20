@@ -1,3 +1,14 @@
 [
-	{ "caption": "NetLinx: Fix Indentation", "command": "fix_netlinx_indentation" }
+	{
+		"caption": "NetLinx: Fix Indentation",
+		"command": "fix_netlinx_indentation"
+	},
+	{
+		"caption": "NetLinx: New From Template: Standard",
+		"command": "netlinx_new_from_template_standard"
+	},
+	{
+		"caption": "NetLinx: New From Template: Test Suite",
+		"command": "netlinx_new_from_template_test_suite"
+	}
 ]
