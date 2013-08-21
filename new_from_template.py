@@ -7,8 +7,12 @@ class NetlinxTemplate:
         content = f.read()
         f.close()
         
-        # Create a new view (tab) and fill it with the template text.
-        v = self.view.window().new_file()
+        # Fill a view (tab) with the template text.
+        # Will fill the current view if it's empty, otherwise a new view
+        # is created. This is to support right clicking the side bar to
+        # create a new file in a specific folder.
+        v = self.view.window().new_file() if self.view.size() > 0 else self.view
+        
         v.insert(edit, 0, content)
         v.set_syntax_file('Packages/NetLinx/NetLinx.tmLanguage')
 
