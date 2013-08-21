@@ -25,3 +25,13 @@ class NetlinxNewFromTemplateStandard(sublime_plugin.TextCommand, NetlinxTemplate
 class NetlinxNewFromTemplateTestSuite(sublime_plugin.TextCommand, NetlinxTemplate):
     def run(self, edit):
         self.load_template(edit, 'Netlinx Test Suite.axs')
+
+# NetLinx Include (.axi) Template
+class NetlinxNewFromTemplateInclude(sublime_plugin.TextCommand, NetlinxTemplate):
+    def run(self, edit):
+        self.load_template(edit, 'Netlinx Include.axs')
+
+# NetLinx Overview Template
+class NetlinxNewFromTemplateOverview(sublime_plugin.TextCommand, NetlinxTemplate):
+    def run(self, edit):
+        self.load_template(edit, 'Netlinx Overview.axs')
