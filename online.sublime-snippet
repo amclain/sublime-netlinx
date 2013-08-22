@@ -1,0 +1,11 @@
+<snippet>
+    <content>
+<![CDATA[online:
+{
+	$0
+}]]>
+    </content>
+    <tabTrigger>online</tabTrigger>
+    <scope>source.netlinx</scope>
+    <description>online { .. }</description>
+</snippet>

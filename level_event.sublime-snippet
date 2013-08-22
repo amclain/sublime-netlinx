@@ -1,0 +1,11 @@
+<snippet>
+    <content>
+<![CDATA[level_event[${1:device}, ${2:channel}]
+{
+	$3
+}]]>
+    </content>
+    <tabTrigger>level_event</tabTrigger>
+    <scope>source.netlinx</scope>
+    <description>level_event[device, level] { .. }</description>
+</snippet>

@@ -1,0 +1,11 @@
+<snippet>
+    <content>
+<![CDATA[onerror:
+{
+	$0
+}]]>
+    </content>
+    <tabTrigger>onerror</tabTrigger>
+    <scope>source.netlinx</scope>
+    <description>onerror { .. }</description>
+</snippet>

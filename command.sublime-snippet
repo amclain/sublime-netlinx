@@ -1,0 +1,11 @@
+<snippet>
+    <content>
+<![CDATA[command:
+{
+	$0
+}]]>
+    </content>
+    <tabTrigger>command</tabTrigger>
+    <scope>source.netlinx</scope>
+    <description>command { .. }</description>
+</snippet>

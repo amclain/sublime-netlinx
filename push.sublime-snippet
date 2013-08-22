@@ -1,0 +1,11 @@
+<snippet>
+    <content>
+<![CDATA[push:
+{
+	$0
+}]]>
+    </content>
+    <tabTrigger>push</tabTrigger>
+    <scope>source.netlinx</scope>
+    <description>push { .. }</description>
+</snippet>
