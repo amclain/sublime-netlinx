@@ -1,0 +1,11 @@
+<snippet>
+    <content>
+<![CDATA[define_function $1${2:name}($3)
+{
+	$4
+}]]>
+    </content>
+    <tabTrigger>define_f</tabTrigger>
+    <scope>source.netlinx</scope>
+    <description>define_function [return] name(params) { .. }</description>
+</snippet>
