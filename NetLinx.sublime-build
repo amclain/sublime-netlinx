@@ -1,0 +1,22 @@
+{
+	"shell_cmd": "netlinx-compile --smart -s \"${file}\"",
+	"file_regex": "^(..[^:]*):([0-9]+):?([0-9]+)?:? (.*)$",
+	"working_dir": "${file_path}",
+	"selector": "source.netlinx",
+
+	"variants":
+	[
+		{
+			"name": "Source",
+			"shell_cmd": "netlinx-compile -s \"${file}\""
+		},
+		{
+			"name": "Workspace",
+			"shell_cmd": "netlinx-compile --smart -s \"${file}\""
+		},
+		{
+			"name": "Run",
+			"shell_cmd": "netlinx-compile --smart -s \"${file}\""
+		}
+	]
+}
