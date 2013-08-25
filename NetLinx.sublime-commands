@@ -18,5 +18,13 @@
 	{
 		"caption": "NetLinx: New From Template: Overview",
 		"command": "netlinx_new_from_template_overview"
+	},
+	{
+		"caption": "NetLinx: Launch NetLinx Diagnostics",
+		"command": "netlinx_launch_diagnostics"
+	},
+	{
+		"caption": "NetLinx: Launch File Transfer 2",
+		"command": "netlinx_launch_file_transfer_2"
 	}
 ]
