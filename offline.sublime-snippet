@@ -1,0 +1,11 @@
+<snippet>
+    <content>
+<![CDATA[offline:
+{
+	$0
+}]]>
+    </content>
+    <tabTrigger>offline</tabTrigger>
+    <scope>source.netlinx</scope>
+    <description>offline { .. }</description>
+</snippet>

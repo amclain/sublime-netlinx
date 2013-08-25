@@ -1,0 +1,11 @@
+<snippet>
+    <content>
+<![CDATA[release:
+{
+	$0
+}]]>
+    </content>
+    <tabTrigger>release</tabTrigger>
+    <scope>source.netlinx</scope>
+    <description>release { .. }</description>
+</snippet>

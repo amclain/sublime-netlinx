@@ -1,0 +1,16 @@
+<snippet>
+    <content>
+<![CDATA[channel_event[${1:device}, ${2:channel}]
+{
+	on:
+	{
+		$3
+	}
+	
+	off: {}
+}]]>
+    </content>
+    <tabTrigger>channel_e</tabTrigger>
+    <scope>source.netlinx</scope>
+    <description>channel_event[device, channel] { .. }</description>
+</snippet>

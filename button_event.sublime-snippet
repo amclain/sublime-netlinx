@@ -1,0 +1,16 @@
+<snippet>
+    <content>
+<![CDATA[button_event[${1:device}, ${2:channel}]
+{
+	push:
+	{
+		$3
+	}
+	
+	release: {}
+}]]>
+    </content>
+    <tabTrigger>button_e</tabTrigger>
+    <scope>source.netlinx</scope>
+    <description>button_event[device, channel] { .. }</description>
+</snippet>

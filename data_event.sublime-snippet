@@ -1,0 +1,18 @@
+<snippet>
+    <content>
+<![CDATA[data_event[${1:device}]
+{
+	string:
+	{
+		$3
+	}
+	
+    command: {}
+    online:  {}
+    offline: {}
+}]]>
+    </content>
+    <tabTrigger>data_e</tabTrigger>
+    <scope>source.netlinx</scope>
+    <description>data_event[device] { .. }</description>
+</snippet>

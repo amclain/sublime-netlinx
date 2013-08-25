@@ -1,0 +1,11 @@
+<snippet>
+    <content>
+<![CDATA[off:
+{
+	$0
+}]]>
+    </content>
+    <tabTrigger>off</tabTrigger>
+    <scope>source.netlinx</scope>
+    <description>off { .. }</description>
+</snippet>
