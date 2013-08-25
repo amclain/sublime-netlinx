@@ -24,7 +24,7 @@
 		"command": "netlinx_launch_diagnostics"
 	},
 	{
-		"caption": "NetLinx: Launch File Transfer 2",
-		"command": "netlinx_launch_file_transfer_2"
+		"caption": "NetLinx: Launch File Transfer",
+		"command": "netlinx_launch_file_transfer"
 	}
 ]
