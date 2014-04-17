@@ -6,6 +6,8 @@
 	<array>
 		<string>axs</string>
 		<string>axi</string>
+		<string>axs.erb</string>
+		<string>axi.erb</string>
 	</array>
 	<key>firstLineMatch</key>
 	<string>-[*]-( Mode:)? C -[*]-</string>
