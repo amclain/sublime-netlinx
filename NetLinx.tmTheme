@@ -45,9 +45,22 @@
 		</dict>
 		<dict>
 			<key>name</key>
+			<string>Ruby Normal</string>
+			<key>scope</key>
+			<string>source.ruby.embedded.source, constant.numeric.ruby, keyword.operator.assignment.augmented.ruby, punctuation.section.scope.ruby, punctuation</string>
+			<key>settings</key>
+			<dict>
+				<key>fontStyle</key>
+				<string></string>
+				<key>foreground</key>
+				<string>#000000</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>name</key>
 			<string>Comment</string>
 			<key>scope</key>
-			<string>comment</string>
+			<string>comment, punctuation.definition.comment</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -60,7 +73,7 @@
 			<key>name</key>
 			<string>String</string>
 			<key>scope</key>
-			<string>string</string>
+			<string>string, punctuation.section.embedded.ruby, punctuation.definition.string</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -86,7 +99,7 @@
 			<key>name</key>
 			<string>Constant</string>
 			<key>scope</key>
-			<string>constant, support.constant</string>
+			<string>constant, support.constant, variable.other.constant.ruby</string>
 			<key>settings</key>
 			<dict>
 				<key>fontStyle</key>
@@ -248,9 +261,11 @@
 			<key>settings</key>
 			<dict>
 				<key>background</key>
-				<string>#E0E0E0</string>
+				<string>#E7E7E7</string>
 				<key>fontStyle</key>
 				<string></string>
+				<key>foreground</key>
+				<string>#AD3AC2</string>
 			</dict>
 		</dict>
 	</array>
