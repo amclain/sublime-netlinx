@@ -37,10 +37,26 @@
 		<dict>
 			<key>begin</key>
 			<string>&lt;%</string>
+			<key>beginCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.scope.netlinx.erb</string>
+				</dict>
+			</dict>
 			<key>comment</key>
 			<string>Ruby ERB blocks nested in NetLinx code</string>
 			<key>end</key>
 			<string>%&gt;</string>
+			<key>endCaptures</key>
+			<dict>
+				<key>0</key>
+				<dict>
+					<key>name</key>
+					<string>punctuation.section.scope.netlinx.erb</string>
+				</dict>
+			</dict>
 			<key>name</key>
 			<string>meta.block.netlinx.erb</string>
 			<key>patterns</key>
