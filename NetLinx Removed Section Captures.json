@@ -1,0 +1,244 @@
+# These are the "meta.define" functions removed from NetLinx.tmLanguage
+# in order to make NetLinx.erb work correctly. They were overriding
+# the captures for the NetLinx sections (DEFINE_EVENT, DEFINE_PROGRAM).
+
+        {
+            "begin": "(?i)(define_function)",
+            "beginCaptures": {
+                "0": {
+                    "name": "keyword.control.define.netlinx"
+                }
+            },
+            "end": "(?i)(?=\\b(define_function|define_call|define_combine|define_connect_level|define_constant|define_device|define_event|define_latching|define_module|define_mutually_exclusive|define_program|define_start|define_toggling|define_type|define_variable|program_name)\\b)",
+            "name": "meta.define.function.netlinx",
+            "patterns": [
+                {
+                    "include": "$self"
+                }
+            ]
+        },
+        {
+            "begin": "(?i)(define_call)",
+            "beginCaptures": {
+                "0": {
+                    "name": "keyword.control.define.netlinx"
+                }
+            },
+            "end": "(?i)(?=\\b(define_function|define_call|define_combine|define_connect_level|define_constant|define_device|define_event|define_latching|define_module|define_mutually_exclusive|define_program|define_start|define_toggling|define_type|define_variable|program_name)\\b)",
+            "name": "meta.define.call.netlinx",
+            "patterns": [
+                {
+                    "include": "$self"
+                }
+            ]
+        },
+        {
+            "begin": "(?i)(define_combine)",
+            "beginCaptures": {
+                "0": {
+                    "name": "keyword.control.define.netlinx"
+                }
+            },
+            "end": "(?i)(?=\\b(define_function|define_call|define_combine|define_connect_level|define_constant|define_device|define_event|define_latching|define_module|define_mutually_exclusive|define_program|define_start|define_toggling|define_type|define_variable|program_name)\\b)",
+            "name": "meta.define.combine.netlinx",
+            "patterns": [
+                {
+                    "include": "$self"
+                }
+            ]
+        },
+        {
+            "begin": "(?i)(define_connect_level)",
+            "beginCaptures": {
+                "0": {
+                    "name": "keyword.control.define.netlinx"
+                }
+            },
+            "end": "(?i)(?=\\b(define_function|define_call|define_combine|define_connect_level|define_constant|define_device|define_event|define_latching|define_module|define_mutually_exclusive|define_program|define_start|define_toggling|define_type|define_variable|program_name)\\b)",
+            "name": "meta.define.connect_level.netlinx",
+            "patterns": [
+                {
+                    "include": "$self"
+                }
+            ]
+        },
+        {
+            "begin": "(?i)(define_constant)",
+            "beginCaptures": {
+                "0": {
+                    "name": "keyword.control.define.netlinx"
+                }
+            },
+            "end": "(?i)(?=\\b(define_function|define_call|define_combine|define_connect_level|define_constant|define_device|define_event|define_latching|define_module|define_mutually_exclusive|define_program|define_start|define_toggling|define_type|define_variable|program_name)\\b)",
+            "name": "meta.define.constant.netlinx",
+            "patterns": [
+                {
+                    "include": "$self"
+                }
+            ]
+        },
+        {
+            "begin": "(?i)(define_device)",
+            "beginCaptures": {
+                "0": {
+                    "name": "keyword.control.define.netlinx"
+                }
+            },
+            "end": "(?i)(?=\\b(define_function|define_call|define_combine|define_connect_level|define_constant|define_device|define_event|define_latching|define_module|define_mutually_exclusive|define_program|define_start|define_toggling|define_type|define_variable|program_name)\\b)",
+            "name": "meta.define.device.netlinx",
+            "patterns": [
+                {
+                    "include": "$self"
+                }
+            ]
+        },
+        {
+            "begin": "(?i)(define_event)",
+            "beginCaptures": {
+                "0": {
+                    "name": "keyword.control.define.netlinx"
+                }
+            },
+            "end": "(?i)(?=\\b(define_function|define_call|define_combine|define_connect_level|define_constant|define_device|define_event|define_latching|define_module|define_mutually_exclusive|define_program|define_start|define_toggling|define_type|define_variable|program_name)\\b)",
+            "name": "meta.define.event.netlinx",
+            "patterns": [
+                {
+                    "include": "$self"
+                }
+            ]
+        },
+        {
+            "begin": "(?i)(define_latching)",
+            "beginCaptures": {
+                "0": {
+                    "name": "keyword.control.define.netlinx"
+                }
+            },
+            "end": "(?i)(?=\\b(define_function|define_call|define_combine|define_connect_level|define_constant|define_device|define_event|define_latching|define_module|define_mutually_exclusive|define_program|define_start|define_toggling|define_type|define_variable|program_name)\\b)",
+            "name": "meta.define.latching.netlinx",
+            "patterns": [
+                {
+                    "include": "$self"
+                }
+            ]
+        },
+        {
+            "begin": "(?i)(define_module)",
+            "beginCaptures": {
+                "0": {
+                    "name": "keyword.control.define.netlinx"
+                }
+            },
+            "end": "(?i)(?=\\b(define_function|define_call|define_combine|define_connect_level|define_constant|define_device|define_event|define_latching|define_module|define_mutually_exclusive|define_program|define_start|define_toggling|define_type|define_variable|program_name)\\b)",
+            "name": "meta.define.module.netlinx",
+            "patterns": [
+                {
+                    "include": "$self"
+                }
+            ]
+        },
+        {
+            "begin": "(?i)(define_mutually_exclusive)",
+            "beginCaptures": {
+                "0": {
+                    "name": "keyword.control.define.netlinx"
+                }
+            },
+            "end": "(?i)(?=\\b(define_function|define_call|define_combine|define_connect_level|define_constant|define_device|define_event|define_latching|define_module|define_mutually_exclusive|define_program|define_start|define_toggling|define_type|define_variable|program_name)\\b)",
+            "name": "meta.define.mutually_exclusive.netlinx",
+            "patterns": [
+                {
+                    "include": "$self"
+                }
+            ]
+        },
+        {
+            "begin": "(?i)(define_program)",
+            "beginCaptures": {
+                "0": {
+                    "name": "keyword.control.define.netlinx"
+                }
+            },
+            "end": "(?i)(?=\\b(define_function|define_call|define_combine|define_connect_level|define_constant|define_device|define_event|define_latching|define_module|define_mutually_exclusive|define_program|define_start|define_toggling|define_type|define_variable|program_name)\\b)",
+            "name": "meta.define.program.netlinx",
+            "patterns": [
+                {
+                    "include": "$self"
+                }
+            ]
+        },
+        {
+            "begin": "(?i)(define_start)",
+            "beginCaptures": {
+                "0": {
+                    "name": "keyword.control.define.netlinx"
+                }
+            },
+            "end": "(?i)(?=\\b(define_function|define_call|define_combine|define_connect_level|define_constant|define_device|define_event|define_latching|define_module|define_mutually_exclusive|define_program|define_start|define_toggling|define_type|define_variable|program_name)\\b)",
+            "name": "meta.define.start.netlinx",
+            "patterns": [
+                {
+                    "include": "$self"
+                }
+            ]
+        },
+        {
+            "begin": "(?i)(define_toggling)",
+            "beginCaptures": {
+                "0": {
+                    "name": "keyword.control.define.netlinx"
+                }
+            },
+            "end": "(?i)(?=\\b(define_function|define_call|define_combine|define_connect_level|define_constant|define_device|define_event|define_latching|define_module|define_mutually_exclusive|define_program|define_start|define_toggling|define_type|define_variable|program_name)\\b)",
+            "name": "meta.define.toggling.netlinx",
+            "patterns": [
+                {
+                    "include": "$self"
+                }
+            ]
+        },
+        {
+            "begin": "(?i)(define_type)",
+            "beginCaptures": {
+                "0": {
+                    "name": "keyword.control.define.netlinx"
+                }
+            },
+            "end": "(?i)(?=\\b(define_function|define_call|define_combine|define_connect_level|define_constant|define_device|define_event|define_latching|define_module|define_mutually_exclusive|define_program|define_start|define_toggling|define_type|define_variable|program_name)\\b)",
+            "name": "meta.define.type.netlinx",
+            "patterns": [
+                {
+                    "include": "$self"
+                }
+            ]
+        },
+        {
+            "begin": "(?i)(define_variable)",
+            "beginCaptures": {
+                "0": {
+                    "name": "keyword.control.define.netlinx"
+                }
+            },
+            "end": "(?i)(?=\\b(define_function|define_call|define_combine|define_connect_level|define_constant|define_device|define_event|define_latching|define_module|define_mutually_exclusive|define_program|define_start|define_toggling|define_type|define_variable|program_name)\\b)",
+            "name": "meta.define.variable.netlinx",
+            "patterns": [
+                {
+                    "include": "$self"
+                }
+            ]
+        },
+        {
+            "begin": "(?i)(program_name)",
+            "beginCaptures": {
+                "0": {
+                    "name": "keyword.control.define.netlinx"
+                }
+            },
+            "end": "(?i)(?=\\b(define_function|define_call|define_combine|define_connect_level|define_constant|define_device|define_event|define_latching|define_module|define_mutually_exclusive|define_program|define_start|define_toggling|define_type|define_variable|program_name)\\b)",
+            "name": "meta.define.program_name.netlinx",
+            "patterns": [
+                {
+                    "include": "$self"
+                }
+            ]
+        },

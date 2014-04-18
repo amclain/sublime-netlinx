@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>axs.erb</string>
+		<string>axi.erb</string>
+	</array>
+	<key>firstLineMatch</key>
+	<string>-[*]-( Mode:)? C -[*]-</string>
+	<key>foldingStartMarker</key>
+	<string>(?x)
+		 /\*\*(?!\*)
+		|^(?![^{]*?//|[^{]*?/\*(?!.*?\*/.*?\{)).*?\{\s*($|//|/\*(?!.*?\*/.*\S))
+	</string>
+	<key>foldingStopMarker</key>
+	<string>(?&lt;!\*)\*\*/|^\s*\}</string>
+	<key>keyEquivalent</key>
+	<string>^~C</string>
+	<key>name</key>
+	<string>NetLinx ERB</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>include</key>
+			<string>#erb</string>
+		</dict>
+		<dict>
+			<key>include</key>
+			<string>source.netlinx</string>
+		</dict>
+	</array>
+	<key>repository</key>
+	<dict>
+		<key>erb</key>
+		<dict>
+			<key>begin</key>
+			<string>&lt;%</string>
+			<key>comment</key>
+			<string>Ruby ERB blocks nested in NetLinx code</string>
+			<key>end</key>
+			<string>%&gt;</string>
+			<key>name</key>
+			<string>meta.block.netlinx.erb</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.ruby</string>
+				</dict>
+				<dict>
+					<key>include</key>
+					<string>meta.define.event</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<key>scopeName</key>
+	<string>source.netlinx.erb</string>
+	<key>uuid</key>
+	<string>25066DC2-6B1D-11D9-9D5B-000D93589AF6</string>
+</dict>
+</plist>

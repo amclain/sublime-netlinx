@@ -240,6 +240,19 @@
 				<string>#FFFFFF</string>
 			</dict>
 		</dict>
+		<dict>
+			<key>name</key>
+			<string>Ruby ERB Block</string>
+			<key>scope</key>
+			<string>meta.block.netlinx.erb</string>
+			<key>settings</key>
+			<dict>
+				<key>background</key>
+				<string>#E0E0E0</string>
+				<key>fontStyle</key>
+				<string></string>
+			</dict>
+		</dict>
 	</array>
 	<key>uuid</key>
 	<string>D8D5E82E-3D5B-46B5-B38E-8C841C21347D</string>
