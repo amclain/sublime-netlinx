@@ -5,7 +5,9 @@
 	<key>fileTypes</key>
 	<array>
 		<string>axs.erb</string>
+		<string>axs.erb.tmpl</string>
 		<string>axi.erb</string>
+		<string>axi.erb.tmpl</string>
 	</array>
 	<key>firstLineMatch</key>
 	<string>-[*]-( Mode:)? C -[*]-</string>
