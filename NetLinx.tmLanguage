@@ -616,14 +616,6 @@
 				</dict>
 				<dict>
 					<key>comment</key>
-					<string>Define Keywords</string>
-					<key>match</key>
-					<string>(?i)\b(define_function|define_call|define_combine|define_connect_level|define_constant|define_device|define_event|define_latching|define_module|define_mutually_exclusive|define_program|define_start|define_toggling|define_type|define_variable|program_name)\b</string>
-					<key>name</key>
-					<string>keyword.control.define.netlinx</string>
-				</dict>
-				<dict>
-					<key>comment</key>
 					<string>Device Keywords</string>
 					<key>match</key>
 					<string>(?i)\b(device_id|device_id_string|device_info|device_standby|device_wake|dynamic_application_device|master_slot|master_sn|reboot|send_command|system_number)\b</string>
