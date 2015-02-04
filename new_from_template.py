@@ -3,9 +3,8 @@ import sublime, sublime_plugin, os
 class NetlinxTemplate:
     def load_template(self, edit, filename):
         # Read in the template.
-        f = open(os.path.join(os.path.dirname(__file__), 'templates', filename))
-        content = f.read()
-        f.close()
+        content = sublime.load_resource("Packages/NetLinx/templates/%(filename)s" % locals()) \
+            .replace("\r", "")
         
         # Fill a view (tab) with the template text.
         # Will fill the current view if it's empty, otherwise a new view
