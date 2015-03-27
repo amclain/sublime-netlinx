@@ -11,7 +11,7 @@ hg clone https://bitbucket.org/amclain/sublime-netlinx
 
 Using [TortoiseHg](http://tortoisehg.bitbucket.org/) or the [Mercurial](http://mercurial.selenic.com/)
 `hg` command, [clone](http://tortoisehg.bitbucket.org/manual/2.9/clone.html)
-the [sublime-netlinx project source code](https://sourceforge.net/p/sublime-netlinx/code)
+the [sublime-netlinx project source code](https://bitbucket.org/amclain/sublime-netlinx)
 into the Sublime packages directory under a folder named ***NetLinx***.
 
 The plugin is now installed and will show up in Sublime Text. At this point you
