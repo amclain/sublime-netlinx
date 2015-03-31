@@ -11,8 +11,12 @@
 			"shell_cmd": "netlinx-compile -s \"${file}\""
 		},
 		{
-			"name": "Workspace",
+			"name": "Workspace - All Systems",
 			"shell_cmd": "netlinx-compile --smart -s \"${file}\""
+		},
+		{
+			"name": "Workspace - Active System",
+			"shell_cmd": "set NETLINX_ACTIVE_SYSTEM_ONLY=true && netlinx-compile --smart -s \"${file}\""
 		},
 		{
 			"name": "Run",

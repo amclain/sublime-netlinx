@@ -113,7 +113,8 @@ Palette (`Tools` -> `Command Palette`) (Ctrl + Shift + P).
 
 * [Build: Build](docs/build.md) (Ctrl + B) - Same as *Build: Workspace*
 * [Build: Source](docs/build.md)
-* [Build: Workspace](docs/build.md)
+* [Build: Workspace - All Systems](docs/build.md)
+* [Build: Workspace - Active System](docs/build.md)
 * [Build: Run](docs/build.md) (Future)
 * [NetLinx: Fix Indentation](docs/fix_indentation.md)
 * [NetLinx: New From Template: Standard](docs/new_from_template.md)
