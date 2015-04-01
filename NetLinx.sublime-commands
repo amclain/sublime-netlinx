@@ -26,5 +26,9 @@
 	{
 		"caption": "NetLinx: Launch File Transfer",
 		"command": "netlinx_launch_file_transfer"
+	},
+	{
+		"caption": "NetLinx: Generate .apw From workspace.config.yaml",
+		"command": "netlinx_generate_workspace"
 	}
 ]
