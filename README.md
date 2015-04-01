@@ -56,54 +56,21 @@ GitHub repositories.
 
 Setting Up A Workspace
 ----------------------
-*Workspace creation will be a little clumsy until this functionality is added
-to [netlinx-workspace](https://github.com/amclain/netlinx-workspace).*
+The easiest way to maintain a NetLinx workspace with Sublime Text is by
+[using a netlinx-workspace workspace.config.yaml file](https://github.com/amclain/netlinx-workspace#yaml-workspace-configuration).
+This file can be created by hand, by running `netlinx-workspace --create`, or by
+using a framework like [netlinx-erb](https://github.com/amclain/netlinx-erb#netlinx-erb)
+that handles all aspects of developing and maintaining a NetLinx project.
 
-1) Open NetLinx Studio and go through the `Workspace Wizard`. When it comes
-to the `Master Source Code File Selection` screen, choose `Add the Master Source
-Code File later`.
+*Note:* Ideally a project using a workspace.config.yaml file will be able to be
+compiled with a standard Sublime build task (ctrl + b). However, the
+[extension discovery system issue](https://github.com/amclain/netlinx-compile/issues/9)
+needs to be resolved before this works. In the mean time, a NetLinx Studio .apw
+file can be generated from the command palette with
+`NetLinx: Generate .apw From workspace.config.yaml`. The netlinx-erb framework
+isn't affected by this problem, as it uses its own set of automated tasks.
 
-2) Add the project folder to Sublime Text: `Project` -> `Add Folder to Project...`
-
-3) Select `NetLinx: New From Template: Overview` from the Command Palette
-(ctrl + shift + p) or `Tools` -> `Command Palette`.
-
-4) Fill in the header and program name, then save the .axs file. This file will
-contain includes to device and touch panel files, but typically shouldn't do
-any of the heavy lifting itself.
-
-5) Create a folder named `include`. This is where the device and touch panel
-code will reside. Breaking up functionality into different files makes it easier
-to maintain a complex system, as well as reuse those components in other systems.
-
-6) Select `NetLinx: New From Template: Include`, fill in the header for one of
-the devices (touch panel, for example), change the include guard
-(`#if_not_defined`) to a project-unique name, and save the file in the `include`
-folder. Code does not need to be written yet.
-
-7) Repeat step 6, adding an include file for each logical component of the
-system. Subfolders may be necessary for complex projects.
-
-8) Add the appropriate `#include` declarations to the .axs source code file.
-
-9) In NetLinx Studio, add the .axs file as an existing source file and set it to
-`Master File`. Add the .axi include files as existing include files.
-
-10) Press `Build Active System` as a sanity check to make sure the workspace
-is set up correctly. Since no source code has been written at this point,
-any errors will be problems with files that haven't been included correctly.
-Fix the errors, if any.
-
-11) Close NetLinx Studio. At this point the source code can be written in
-Sublime Text.
-
-12) With the .axs or include file open in Sublime Text, build the file
-(ctrl + b) or `Tools` -> `Build`.
-
-13) The project should compile. If it doesn't, verify the installation of
-Ruby and [netlinx-compile](https://github.com/amclain/netlinx-compile).
-
-14) Begin programming.
+* [Alternate Method Using NetLinx Studio](docs/setting_up_a_workspace_with_netlinx_studio.md)
 
 
 Command Reference
