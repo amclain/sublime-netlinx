@@ -140,9 +140,11 @@ All of the code snippets available for auto-completion can be found under the me
 
 Helpful Sublime Plugins
 -----------------------
+Sublime Text plugins can be installed using [Package Control](https://packagecontrol.io/).
+
 * [Abacus](https://github.com/khiltd/Abacus) - Text alignment.
 * [All Autocomplete](https://github.com/alienhard/SublimeAllAutocomplete) -
 Extends the default autocomplete to find matches in all open files.
 * [HexViewer](https://github.com/facelessuser/HexViewer) - Hex viewer/editor.
 * [Text Pastry](https://github.com/duydao/Text-Pastry) - Insert number/text sequences.
-* [Vintage](http://www.sublimetext.com/docs/3/vintage.html) - Enable Vim hotkeys.
+* [Vintageous](https://github.com/guillermooo/Vintageous) - Vim hotkeys.
