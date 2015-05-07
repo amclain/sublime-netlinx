@@ -62,7 +62,7 @@ This file can be created by hand, by running `netlinx-workspace --create`, or by
 using a framework like [netlinx-erb](https://github.com/amclain/netlinx-erb#netlinx-erb)
 that handles all aspects of developing and maintaining a NetLinx project.
 
-*Note:* Ideally a project using a workspace.config.yaml file will be able to be
+> Ideally a project using a workspace.config.yaml file will be able to be
 compiled with a standard Sublime build task (ctrl + b). However, the
 [extension discovery system issue](https://github.com/amclain/netlinx-compile/issues/9)
 needs to be resolved before this works. In the mean time, a NetLinx Studio .apw
