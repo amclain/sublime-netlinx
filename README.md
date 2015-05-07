@@ -60,12 +60,37 @@ Transitioning From NetLinx Studio
 It is important to understand that sublime-netlinx is an alternative way to
 work with NetLinx files, not a feature-for-feature clone of NetLinx Studio.
 Therefore, sublime-netlinx requires a different way of thinking than what
-you may be used to. If you typically work with multiple programming lanugages,
+you may be used to. If you typically work with multiple programming languages,
 transitioning to sublime-netlinx will probably be easy and increase your
 productivity. If NetLinx is your only programming language, the transition may
 be more difficult. If you've spent a reasonable amount of time with
 sublime-netlinx and find yourself frustrated, sublime-netlinx may not be right
 for you. That's ok.
+
+
+Workflow
+--------
+
+Sublime Text does a good job of providing an interface that is far less
+cluttered than the NetLinx Studio IDE. In Sublime you'll spend a lot of time
+using the command palette (ctrl + shift + p). Due to this, the sublime-netlinx
+commands are available from the command palette with the prefix `NetLinx`.
+
+Since sublime-netlinx is designed to be lightweight, work is delegated to
+Sublime Text commands and external applications. For example, although building
+a NetLinx file appears to happen in Sublime Text, it's only the console output
+of [netlinx-compile](https://github.com/amclain/netlinx-compile) that's
+displayed by Sublime Text. The build command delegates the work to
+netlinx-compile, which runs in the background.
+
+Some of AMX's proprietary applications don't provide interfaces to work with
+their data and can only be used as standalone applications. NetLinx Diagnostics
+is an example of this. sublime-netlinx provides convenience commands to launch
+these applications.
+
+Sublime Text is a very versatile editor. Keep in mind that you can customize
+the editor and [add plugins](https://packagecontrol.io/) to further improve your
+workflow.
 
 
 Setting Up A Workspace
