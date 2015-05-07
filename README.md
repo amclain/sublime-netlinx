@@ -54,6 +54,20 @@ Mercurial users can use [Hg-Git](http://hg-git.github.io/) to interact with
 GitHub repositories.
 
 
+Transitioning From NetLinx Studio
+---------------------------------
+
+It is important to understand that sublime-netlinx is an alternative way to
+work with NetLinx files, not a feature-for-feature clone of NetLinx Studio.
+Therefore, sublime-netlinx requires a different way of thinking than what
+you may be used to. If you typically work with multiple programming lanugages,
+transitioning to sublime-netlinx will probably be easy and increase your
+productivity. If NetLinx is your only programming language, the transition may
+be more difficult. If you've spent a reasonable amount of time with
+sublime-netlinx and find yourself frustrated, sublime-netlinx may not be right
+for you. That's ok.
+
+
 Setting Up A Workspace
 ----------------------
 The easiest way to maintain a NetLinx workspace with Sublime Text is by
