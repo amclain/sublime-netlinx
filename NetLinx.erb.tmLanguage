@@ -65,10 +65,6 @@
 					<key>include</key>
 					<string>source.ruby</string>
 				</dict>
-				<dict>
-					<key>include</key>
-					<string>meta.define.event</string>
-				</dict>
 			</array>
 		</dict>
 	</dict>
