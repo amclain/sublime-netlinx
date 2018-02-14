@@ -296,10 +296,6 @@
 				</dict>
 				<dict>
 					<key>include</key>
-					<string>#sizeof</string>
-				</dict>
-				<dict>
-					<key>include</key>
 					<string>#access</string>
 				</dict>
 				<dict>
